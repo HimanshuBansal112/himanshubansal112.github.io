@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Himanshu Bansal - AI & Machine Learning Engineer portfolio. Multi-Agent Systems, LLM Evaluation & Fine-Tuning, Deep Learning, and Computer Vision.">
+  <title>Himanshu Bansal | AI & Machine Learning Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-top">
+        <a class="logo" href="#top" aria-label="Back to top">
+          <span class="logo-mark">HB</span>
+          <span>Himanshu Bansal</span>
+        </a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">dark mode</button>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#featured-projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#background">Background</a>
+        <a href="#connect">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="top">
+        <h1 class="hero-title">Himanshu Bansal</h1>
+        <p class="hero-subtitle">AI &amp; Machine Learning Engineer</p>
+        <p class="hero-focus">Multi-Agent Architectures &bull; LLM Evaluation &amp; Fine-Tuning &bull; Deep Learning &amp; Computer Vision</p>
+        <div class="hero-links" aria-label="External links">
+          <a href="https://github.com/HimanshuBansal112" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="separator" aria-hidden="true">↗</span>
+          <a href="https://linkedin.com/in/himanshubansalprogrammer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="separator" aria-hidden="true">↗</span>
+          <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+      </section>
+
+      <section id="overview" class="content-section">
+        <h2 class="section-title">Overview</h2>
+        <div class="section-body">
+          <p>
+            I design and build intelligent systems spanning <strong>autonomous agent orchestration (LangGraph, Model Context Protocol)</strong>, 
+            <strong>evaluation frameworks &amp; transformer fine-tuning (PyTorch, DeBERTa)</strong>, and 
+            <strong>applied computer vision (OpenCV, YuNet, SFace)</strong>.
+          </p>
+          <p>
+            I prioritize clean code, reproducible metrics, and building systems that solve operational engineering challenges&mdash;whether that means 
+            mitigating sycophancy in automated LLM judges or designing cloud-independent, edge-ready computer vision pipelines.
+          </p>
+        </div>
+      </section>
+
+      <section id="featured-projects" class="content-section">
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <div class="section-body">
+
+          <article class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">
+                <a href="https://github.com/HimanshuBansal112/Multi-Agent-Study-Orchestrator" target="_blank" rel="noopener noreferrer">Multi-Agent Study Orchestrator</a>
+              </h3>
+              <span class="project-tagline">Autonomous Multi-Agent Workflow Engine for Interactive Learning</span>
+            </div>
+            <p class="project-desc">
+              An asynchronous multi-agent system orchestrating specialized AI agents (Explainer, Notes Maker, Question Generator) to construct stateful, personalized learning pathways.
+            </p>
+            <ul class="project-details">
+              <li><strong>Architecture:</strong> Built on LangGraph and FastAPI, featuring checkpoint-based conversation branching, real-time agent execution tracking, and asynchronous multi-agent message routing.</li>
+              <li><strong>Protocol Integration:</strong> Integrated Model Context Protocol (FastMCP) tools with LangChain agents and local LLMs (Gemma) to enable dynamic tool execution without state pollution.</li>
+              <li><strong>Observability:</strong> Interactive interface providing live agent workflow visualization, execution logs, and interactive quizzes.</li>
+            </ul>
+            <p class="project-stack"><span class="stack-label">Stack:</span> Python, FastAPI, LangGraph, LangChain, FastMCP, Gemma, TailwindCSS</p>
+          </article>
+
+          <article class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">
+                <a href="https://github.com/HimanshuBansal112/Automated-AI-Response-Judge" target="_blank" rel="noopener noreferrer">Automated AI Response Judge</a>
+              </h3>
+              <span class="project-tagline">Dual-Pipeline LLM Evaluation Microservice for Human Preference &amp; Factuality</span>
+            </div>
+            <p class="project-desc">
+              An automated evaluation engine engineered to score and rank paired LLM responses while actively mitigating sycophancy and superficial stylistic bias.
+            </p>
+            <ul class="project-details">
+              <li><strong>Dual-Pipeline Design:</strong> Independent evaluation tracks separating subjective style analysis (fine-tuned DeBERTa-v3-large with KL-divergence loss, label smoothing, gradient accumulation) from factual correctness (zero-shot Qwen 3.5-2B verification).</li>
+              <li><strong>Empirical Benchmarks:</strong> Outperformed random baselines (33.3%), scoring <strong>67.21% accuracy on Anthropic HH-RLHF</strong> and <strong>56.96% on LMSYS Chatbot Arena</strong> evaluation splits.</li>
+              <li><strong>Serving &amp; Inference Pipeline:</strong> Asynchronous FastAPI service handling 512-token multi-turn context windows with local PyTorch inference, paired with a Django management interface.</li>
+            </ul>
+            <p class="project-stack"><span class="stack-label">Stack:</span> PyTorch, Hugging Face, DeBERTa-v3, Qwen 3.5, FastAPI, Django, NumPy</p>
+          </article>
+
+          <article class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">
+                <a href="https://github.com/HimanshuBansal112/Face-Recognition" target="_blank" rel="noopener noreferrer">Real-Time Edge Face Recognition</a>
+              </h3>
+              <span class="project-tagline">Offline, Cloud-Independent Biometric Recognition System</span>
+            </div>
+            <p class="project-desc">
+              A full-stack biometric detection and verification application built to operate in real-time without relying on external cloud APIs or third-party tracking services.
+            </p>
+            <ul class="project-details">
+              <li><strong>Deep Learning Inference:</strong> Integrated lightweight OpenCV deep learning models&mdash;FaceDetectorYN (YuNet) for multi-face detection and FaceRecognizerSF (SFace) for high-dimensional feature embedding extraction.</li>
+              <li><strong>Offline Vector Engine:</strong> Engineered a local, zero-cloud embedding storage and retrieval mechanism using optimized <code>.npz</code> vector matrices and JSON/Base64 APIs.</li>
+              <li><strong>Application Pipeline:</strong> Packaged as an end-to-end Django application supporting live camera stream processing, on-the-fly face registration, and multi-subject recognition.</li>
+            </ul>
+            <p class="project-stack"><span class="stack-label">Stack:</span> Python, OpenCV (YuNet &amp; SFace), Django, NumPy, REST APIs</p>
+          </article>
+
+          <article class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">
+                <a href="https://github.com/HimanshuBansal112/Linear_Equation_System_Solver" target="_blank" rel="noopener noreferrer">High-Precision Linear Equation System Solver</a>
+              </h3>
+              <span class="project-tagline">Exact-Arithmetic Matrix Solver for Arbitrary-Dimension Linear Systems</span>
+            </div>
+            <p class="project-desc">
+              An algorithmic engine designed to eliminate floating-point approximation error when solving systems of linear equations.
+            </p>
+            <ul class="project-details">
+              <li><strong>Exact Fractional Arithmetic:</strong> Developed a custom Fraction numeric data type supporting arbitrary-precision rational arithmetic, completely bypassing IEEE 754 floating-point drift.</li>
+              <li><strong>Algorithmic Core:</strong> Implements a hybridized Gauss Elimination and Gauss-Jordan matrix transformation pipeline with dynamic row-reduction pivoting, supporting determined, under-determined, and inconsistent systems.</li>
+              <li><strong>Implementations:</strong> Maintained across both C# (.NET) and modern C++.</li>
+            </ul>
+            <p class="project-stack"><span class="stack-label">Stack:</span> C# (.NET), C++, Matrix Mathematics, Unit Testing</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="other-projects" class="content-section">
+        <h2 class="section-title">Other Notable Projects</h2>
+        <div class="section-body">
+          <ul class="notable-list">
+            <li>
+              <strong><a href="https://github.com/HimanshuBansal112/Research-Paper-Reviewer-Agent" target="_blank" rel="noopener noreferrer">Research Paper Reviewer Agent</a></strong>
+              &mdash; Autonomous agent that ingests academic PDFs, evaluates methodological soundness, generates structured summaries, and scores authenticity.
+              <span class="inline-stack">[Python, Django, LLM APIs]</span>
+            </li>
+            <li>
+              <strong><a href="https://github.com/HimanshuBansal112/Billing-App" target="_blank" rel="noopener noreferrer">GST Billing &amp; Inventory System</a></strong>
+              &mdash; Desktop ERP software implementing comprehensive GST calculation logic (CGST, SGST, IGST), inventory control, and automated SQL Server Express storage.
+              <span class="inline-stack">[C#, WinForms, SQL Server]</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-body skills-grid">
+          <div class="skill-row">
+            <span class="skill-category">Machine Learning &amp; AI</span>
+            <span class="skill-items">PyTorch, Hugging Face, Transformers, DeBERTa, Scikit-learn, OpenCV</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">LLM &amp; Multi-Agent</span>
+            <span class="skill-items">LangGraph, LangChain, FastMCP (Model Context Protocol), Prompt Engineering</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Data &amp; Computation</span>
+            <span class="skill-items">NumPy, Pandas, Matplotlib, High-Precision Numerical Algorithms</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Frameworks &amp; Serving</span>
+            <span class="skill-items">FastAPI, Django, Model Serving, REST APIs, C# (.NET)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Languages &amp; Core</span>
+            <span class="skill-items">Python, C++, C#, SQL, Git/GitHub, Linux, Visual Studio</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="background" class="content-section">
+        <h2 class="section-title">Background &amp; Achievements</h2>
+        <div class="section-body">
+          <ul class="background-list">
+            <li>
+              <strong>Education:</strong> Bachelor of Technology (B.Tech.) in Computer Science &amp; Engineering (2023 &ndash; 2027), RIMT University, Mandi Gobindgarh, Punjab, India.
+            </li>
+            <li>
+              <strong>Competitive Programming:</strong> Secured 1st place in three college coding competitions (2026); active problem solver on LeetCode with 50+ solved challenges focusing on data structures and algorithms.
+            </li>
+            <li>
+              <strong>Certifications:</strong> Deep Learning for Natural Language Processing (Swayam), Complete Machine Learning &amp; Data Science (GeeksforGeeks), Mastering Generative AI and ChatGPT (GeeksforGeeks).
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="connect" class="content-section">
+        <h2 class="section-title">Connect</h2>
+        <div class="section-body">
+          <p>I am always interested in discussing multi-agent systems, deep learning architectures, or engineering challenges.</p>
+          <ul class="connect-list">
+            <li>GitHub: <a href="https://github.com/HimanshuBansal112" target="_blank" rel="noopener noreferrer">github.com/HimanshuBansal112</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/himanshubansalprogrammer" target="_blank" rel="noopener noreferrer">linkedin.com/in/himanshubansalprogrammer</a></li>
+            <li>Resume: <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume.pdf</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Himanshu Bansal &bull; <a href="https://github.com/HimanshuBansal112/himanshubansal112.github.io" target="_blank" rel="noopener noreferrer">Source code</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

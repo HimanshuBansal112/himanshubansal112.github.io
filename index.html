@@ -95,7 +95,7 @@
             <ul class="project-details">
               <li><strong>Dual-Pipeline Design:</strong> A style track and a separate factual track, run together through a FastAPI service. The style track is a fine-tuned DeBERTa-v3-large (KL-divergence loss, label smoothing, gradient accumulation) that predicts human-preferred style and works standalone. The factual track prompts a locally served Qwen 3.5-2B to rate each response and normalizes the ratings into A / B / tie shares; it has not been benchmarked yet.</li>
               <li><strong>Empirical Benchmarks:</strong> DeBERTa-v3 alone, as a preference judge, reached <strong>67.21% accuracy on Anthropic HH-RLHF</strong> (50% chance) and <strong>56.96% on LMSYS Chatbot Arena</strong> (33.33% chance).</li>
-              <li><strong>Serving &amp; Inference Pipeline:</strong> FastAPI service with local CPU PyTorch inference, handling 512-tokens multi-turn context windows, paired with a Django management interface.</li>
+              <li><strong>Serving &amp; Inference Pipeline:</strong> FastAPI service with local CPU PyTorch inference, handling 512-token multi-turn context windows, paired with a Django management interface.</li>
             </ul>
             <p class="project-stack"><span class="stack-label">Stack:</span> Python, PyTorch, Hugging Face, DeBERTa-v3, Qwen 3.5, FastAPI, Django, NumPy</p>
           </article>
